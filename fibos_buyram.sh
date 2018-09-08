@@ -12,7 +12,7 @@ while [[ 1 ]]; do
     resource=`curl -s $resource_url | jq -r .ram` 
     echo $resource
     if [[ $resource =~ $regex && "$resource" < "$ram_limit" ]]; then
-        node /d/t/buy_ram.js;
+        node /slamdunk/fo/index.js buyram --fo 10000;
     fi;
     sleep 30
 done;
