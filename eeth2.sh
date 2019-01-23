@@ -6,7 +6,7 @@
 node_api="http://api-mainnet.starteos.io"
 wallet_api="http://127.0.0.1:8900"
 cls="/github/eos/build/programs/cleos/cleos"
-executer="eosauthorcom"
+executer="eostonystark"
 
 filename="/slamdunk/toolkit/eos_accounts.txt"
 
