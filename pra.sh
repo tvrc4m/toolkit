@@ -21,7 +21,7 @@ while [[ 1 ]]; do
     unlock_wallet
 
     for account in $bt_accounts; do
-        res=`$cls -u $node_api --wallet-url $wallet_api push action prochaintech click "{\"clickRequest\":{\"account\":\"${account}\",\"candyId\":4}}" -p $account@active | awk '/Error/{print 1}'`
+        res=`$cls -u $node_api --wallet-url $wallet_api push action prochaintech click "{\"clickRequest\":{\"account\":\"${account}\",\"candyId\":0}}" -p $account@active | awk '/Error/{print 1}'`
         echo $res
         echo $account
         $cls -u $node_api --wallet-url $wallet_api get currency balance eosbtextoken $account "BT"
